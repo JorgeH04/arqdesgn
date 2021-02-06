@@ -10,20 +10,27 @@
 
 	<link rel="shortcut icon" href="./favicon.png" />
 
-	<title>Arquitectónica Soluciones - Servicios</title>
+	<title>Arquitectura Zs</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="style.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto%7cRubik:300,400" rel="stylesheet">
 
 	<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
 	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+
 	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
 	<link rel="stylesheet" href="assets/css/theme.min.css" />
 	<link rel="stylesheet" href="assets/css/themes/opus.css" />
 
-	<!-- Head Libs -->
+	<!-- Head <div class="elfsight-app-e2707a08-0e55-454c-9758-2f43fe099934"></div>Libs -->
 	<script async src="assets/vendors/modernizr.min.js"></script>
 	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-	<div class="elfsight-app-e2707a08-0e55-454c-9758-2f43fe099934"></div>
+	
+
+	
 
 </head>
 
@@ -120,6 +127,9 @@
 													</span>
 												</a>
 											</li>
+
+		<div id="myButton"></div>
+											
 											<li>
 												<a href="index.html#contact">
 													<span class="link-icon"></span>
@@ -342,7 +352,7 @@
 			</section>
 
 		</main><!-- /#content.content -->
-
+ 
 		<footer class="main-footer bg-1" >
 			<section>
 				<div class="container">
@@ -377,10 +387,61 @@
 
 	</div><!-- /#wrap -->
 
-	<script src="./assets/vendors/jquery.min.js"></script>
-	<script src="./assets/js/theme-vendors.js"></script>
-	<script src="./assets/js/theme.min.js"></script>
-	
+<!-- Swiper section clients-->
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '5491130952942',
+      
+            headerColor: 'crimson',
+            backgroundColor: 'crimson',
+            buttonImage: '<img src="whatsapp.svg" />'
+        });
+    });
+</script>
+
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 2,
+		spaceBetween: 30,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			'@0.00': {
+				slidesPerView: 2,
+				spaceBetween: 40,
+			},
+			'@0.75': {
+				slidesPerView: 3,
+				spaceBetween: 50,
+			},
+			'@1.00': {
+				slidesPerView: 4,
+				spaceBetween: 60,
+			},
+			'@1.50': {
+				slidesPerView: 5,
+				spaceBetween: 70,
+			},
+		},
+	});
+</script>
+
+<script src="./assets/vendors/jquery.min.js"></script>
+<script src="./assets/js/theme-vendors.js"></script>
+<script src="./assets/js/theme.min.js"></script>
+<script src="./assets/js/liquidAjaxContactForm.min.js"></script>
+<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+
 </body>
 
 </html>
